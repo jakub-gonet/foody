@@ -1,5 +1,7 @@
 import { StyleSheet } from "react-native";
 
+const PRIMARY_COLOR = '#3f7200'
+
 export default StyleSheet.create({
   container: {
     flex: 1,
@@ -16,5 +18,9 @@ export default StyleSheet.create({
     textAlign: 'center',
     color: '#333333',
     marginBottom: 5,
+  },
+  underline: {
+    borderBottomColor: PRIMARY_COLOR,
+    borderBottomWidth: 4,
   },
 });
