@@ -5,8 +5,14 @@ import { createStackNavigator, createAppContainer } from 'react-navigation';
 import styles from './styles/styles'
 import RecipeInfo from './views/RecipeInfo';
 
-const MainNavigator = createStackNavigator({
-  RecipeInfo: { screen: RecipeInfo },
-});
+const MainNavigator = createStackNavigator(
+  { RecipeInfo: RecipeInfo },
+  { initialRouteName: "RecipeInfo" });
 
-const App = createAppContainer(MainNavigator);
+const AppContainer = createAppContainer(MainNavigator);
+
+export default function App() {
+  return (
+    <AppContainer />
+  );
+}
