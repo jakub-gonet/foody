@@ -11,6 +11,9 @@ import renderer from "react-test-renderer";
 
 it("makes an empty test", () => {});
 
+it('makes an empty test', () => {
+
+});
 // it('renders correctly', () => {
 //   renderer.create(<App />);
 // });
