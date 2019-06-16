@@ -9,4 +9,4 @@ PreCommit:
 PrePush:
   Jest:
     enabled: true
-    required_executable: "npm test"
+    command: ["npm", "test", "."]
