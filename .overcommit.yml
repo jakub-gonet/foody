@@ -1,0 +1,12 @@
+PreCommit:
+  TrailingWhitespace:
+    enabled: true
+  EsLint:
+    enabled: true
+  JsHint:
+    enabled: true
+
+PrePush:
+  Jest:
+    enabled: true
+    required_executable: "npm test"
