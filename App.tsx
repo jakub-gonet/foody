@@ -3,11 +3,11 @@ import { StyleSheet, Text, View } from "react-native";
 import { createStackNavigator, createAppContainer } from "react-navigation";
 
 import styles from "./styles/styles";
-import RecipeInfo from "./views/RecipeInfo";
+import Recipe from "./views/Recipe";
 
 const MainNavigator = createStackNavigator(
-  { RecipeInfo: RecipeInfo },
-  { initialRouteName: "RecipeInfo" }
+  { Recipe: Recipe },
+  { initialRouteName: "Recipe" }
 );
 
 const AppContainer = createAppContainer(MainNavigator);

@@ -4,7 +4,7 @@ import Underline from "../components/Underline";
 import StepsList from "../components/StepsList";
 
 interface Props { }
-export default class RecipeInfo extends Component<Props> {
+export default class Recipe extends Component<Props> {
     render() {
         return (
             <View>
