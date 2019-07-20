@@ -25,5 +25,8 @@ export default StyleSheet.create({
   },
   step: {
     marginLeft: 20,
+  },
+  icon: {
+    fontSize: 30
   }
 });
