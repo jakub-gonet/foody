@@ -11,11 +11,15 @@ export default StyleSheet.create({
   },
   underline: {
     borderBottomColor: PRIMARY_COLOR,
-    borderBottomWidth: 4
+    borderBottomWidth: 4,
+    borderRadius: 25,
+    width: "95%",
+    alignSelf: "center"
   },
   flexRow: {
     flexDirection: "row",
-    alignItems: "center"
+    alignItems: "center",
+    padding: 10
   },
   header: {
     fontSize: 50
