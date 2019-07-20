@@ -4,17 +4,13 @@ const PRIMARY_COLOR = "#3f7200";
 
 export default StyleSheet.create({
   container: {
-    flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-    backgroundColor: "#F5FCFF"
+    width: "95%",
+    alignSelf: "center"
   },
   underline: {
     borderBottomColor: PRIMARY_COLOR,
     borderBottomWidth: 4,
     borderRadius: 25,
-    width: "95%",
-    alignSelf: "center"
   },
   flexRow: {
     flexDirection: "row",
@@ -23,5 +19,5 @@ export default StyleSheet.create({
   },
   header: {
     fontSize: 50
-  }
+  },
 });
