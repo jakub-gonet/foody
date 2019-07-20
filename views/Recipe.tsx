@@ -28,7 +28,7 @@ const Recipe: FunctionComponent = () => {
           </Text>
         </Collapsible>
       </View>
-      <StepsList step={new Step("title", [new Step("child 1", [])])} />
+      <StepsList topLevel steps={[new Step("title", [new Step("child 1", [])])]} />
     </View>
   );
 };

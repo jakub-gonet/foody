@@ -20,4 +20,10 @@ export default StyleSheet.create({
   header: {
     fontSize: 50
   },
+  subheader: {
+    fontSize: 25
+  },
+  step: {
+    marginLeft: 20,
+  }
 });
