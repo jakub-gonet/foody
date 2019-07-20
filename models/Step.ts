@@ -1,11 +1,9 @@
-import StepsList from "../components/StepsList";
-
 export default class Step {
-    title: string;
-    children: Step[];
+  title: string;
+  children: Step[];
 
-    constructor(title: string, children: Step[] = []) {
-        this.title = title
-        this.children = children
-    }
+  constructor(title: string, children: Step[] = []) {
+    this.title = title;
+    this.children = children;
+  }
 }
