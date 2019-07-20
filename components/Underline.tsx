@@ -1,10 +1,7 @@
-import React, { Component } from "react";
+import React, { FunctionComponent } from "react";
 import { View } from "react-native";
 import styles from "../styles/styles";
 
-interface Props { }
-export default class Underline extends Component<Props> {
-    render() {
-        return (<View style={styles.underline}></View>);
-    }
-}
+const Underline: FunctionComponent<{}> = () => <View style={styles.underline}></View>;
+
+export default Underline;
