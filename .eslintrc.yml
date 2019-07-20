@@ -2,10 +2,15 @@ env:
   browser: true
   es6: true
   node: true
-extends: 'eslint:recommended'
+extends: [
+  'plugin:react/recommended',
+  'prettier/@typescript-eslint',
+  'plugin:@typescript-eslint/recommended'
+]
 globals:
   Atomics: readonly
   SharedArrayBuffer: readonly
+parser: '@typescript-eslint/parser'
 parserOptions:
   ecmaFeatures:
     jsx: true
@@ -14,9 +19,8 @@ parserOptions:
 plugins:
   - react
 rules:
-  indent:
-    - error
-    - 2
+  '@typescript-eslint/indent': [2, 2]
+  '@typescript-eslint/explicit-function-return-type': 0
   linebreak-style:
     - error
     - unix
