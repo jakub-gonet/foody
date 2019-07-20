@@ -1,12 +1,5 @@
-import React, { Component } from "react";
-import { View } from "react-native";
-import Step from "../models/Step";
+import { FunctionComponent } from "react";
 
+const StepsList: FunctionComponent = () => null;
 
-interface Props { }
-export default class StepsList extends Component<Props> {
-    render() {
-        return null;
-    }
-}
-
+export default StepsList;
