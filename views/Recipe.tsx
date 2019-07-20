@@ -6,6 +6,7 @@ import styles from "../styles/styles";
 import { Avatar } from "react-native-elements";
 import Collapsible from "react-native-collapsible";
 import { TouchableOpacity } from "react-native-gesture-handler";
+import Step from "../models/Step";
 
 const Recipe: FunctionComponent = () => {
   const [infoCollapsed, setInfoCollapsed] = useState(true);
@@ -17,7 +18,7 @@ const Recipe: FunctionComponent = () => {
           <TouchableOpacity onPress={() => setInfoCollapsed(!infoCollapsed)}>
             <Text style={{ ...styles.header, flexGrow: 1, marginRight: 10 }}>Recipe title</Text>
           </TouchableOpacity>
-          <Avatar rounded size="large" title="123:45" />
+          <Avatar rounded size="large" title="65:45" titleStyle={styles.subheader} />
         </View>
         <Underline />
         <Collapsible collapsed={infoCollapsed}>
@@ -27,7 +28,7 @@ const Recipe: FunctionComponent = () => {
           </Text>
         </Collapsible>
       </View>
-      <StepsList />
+      <StepsList step={new Step("title", [new Step("child 1", [])])} />
     </View>
   );
 };
